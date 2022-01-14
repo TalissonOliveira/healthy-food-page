@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+
+:root {
+  --white: #FFFFFF;
+
+  --gray-50: #FAFAFC;
+  --gray-300: #707070;
+
+  --green-500: #BADC58;
+
+  --blue-700: #1D164D;
+  --blue-500: #2D3561;
+  --blue-200: #9E9BAF;
+}
+
+body {
+  background: var(--white);
+  color: var(--blue-200);
+}
+
+body, input, button, textarea, select {
+  font: 400 1.6rem "Muli", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
