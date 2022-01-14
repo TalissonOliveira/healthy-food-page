@@ -1,0 +1,47 @@
+.headerContainer {
+  height: 10.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+
+  .logo {
+    color: var(--green-500);
+    font-size: 3.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  nav {
+    a {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--white);
+      padding: 1rem 0;
+      transition: filter .2s;
+
+      & + a {
+        margin-left: 3.2rem;
+      }
+
+      &:hover {
+        filter: brightness(.9);
+      }
+
+      &.signUpButton {
+        color: var(--green-500);
+        background: var(--white);
+        padding: 1.6rem 2.5rem;
+        border-radius: .5rem;
+      }
+    }
+  }
+}
