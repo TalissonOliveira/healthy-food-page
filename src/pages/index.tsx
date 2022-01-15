@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { DefaultLayout } from '../Layout'
 import { HomeSection } from '../sections/Home'
 import { RecipesSection } from '../sections/Recipes'
+import { ServicesSection } from '../sections/Services'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <DefaultLayout>
         <HomeSection />
         <RecipesSection />
+        <ServicesSection />
       </DefaultLayout>
     </>
   )
