@@ -1,0 +1,48 @@
+.card {
+  background: var(--white);
+  width: 52.8rem;
+  height: 22.5rem;
+  display: flex;
+  border-radius: .7rem;
+
+  box-shadow: 0px 15px 20px #1D164D14;
+
+  img {
+    max-width: 25.3rem;
+  }
+}
+
+.card-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 27.5rem;
+  padding: 0 3.2rem;
+  gap: 1.6rem;
+
+  h3 {
+    color: var(--blue-700);
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 3.4rem;
+  }
+
+  button {
+    color: var(--white);
+    background: var(--green-500);
+    width: 13.4rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: .7rem;
+
+    font-size: 1.6rem;
+
+    transition: filter .2s;
+
+    &:hover {
+      filter: brightness(.9);
+    }
+  }
+}
