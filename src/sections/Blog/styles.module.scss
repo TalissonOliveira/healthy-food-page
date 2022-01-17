@@ -1,0 +1,42 @@
+.blogContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-50);
+  padding: 4.8rem 0 9.9rem;
+}
+
+.blogContent {
+  text-align: center;
+  width: 100%;
+  max-width: 1366px;
+
+  h2 {
+    color: var(--blue-700);
+    font-size: 3.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    color: var(--blue-200);
+    max-width: 51rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.swiper2 {
+  // padding-left: 13.7rem;
+  padding-bottom: 3.5rem;
+  padding-left: 2rem;
+  margin-left: 11.7rem;
+  height: 100%;
+
+  .swiper-slide {
+    width: 28.3%;
+  }
+}
