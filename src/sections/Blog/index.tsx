@@ -1,5 +1,6 @@
 import { CarouselCard } from '../../components/CarouselCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -15,6 +16,8 @@ import author_1 from '../../../public/images/author_1.png'
 import author_2 from '../../../public/images/author_2.png'
 import author_3 from '../../../public/images/author_3.png'
 import author_4 from '../../../public/images/author_4.png'
+
+SwiperCore.use([Navigation]);
 
 export function BlogSection() {
   const postsData = [
@@ -55,20 +58,16 @@ export function BlogSection() {
           spaceBetween={24}
           slidesPerView={'auto'}
           navigation
-          draggable={true}
-          pagination={{ clickable: true }}
-          className={styles.swiper2}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          className={styles.swiper}
         >
           {postsData.map(post => (
             <SwiperSlide className={styles['swiper-slide']}>
-                <CarouselCard
-                  postImage={post.postImage}
-                  postTitle={post.postTitle}
-                  authorPhoto={post.authorPhoto}
-                  authorName={post.authorName}
-                />
+              <CarouselCard
+                postImage={post.postImage}
+                postTitle={post.postTitle}
+                authorPhoto={post.authorPhoto}
+                authorName={post.authorName}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

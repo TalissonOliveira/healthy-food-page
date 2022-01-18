@@ -29,11 +29,13 @@
   }
 }
 
-.swiper2 {
-  // padding-left: 13.7rem;
+.swiper-container {
+  background-color: red;
+}
+
+.swiper {
   padding-bottom: 3.5rem;
-  padding-left: 2rem;
-  margin-left: 11.7rem;
+  padding-left: 13.7rem;
   height: 100%;
 
   .swiper-slide {
