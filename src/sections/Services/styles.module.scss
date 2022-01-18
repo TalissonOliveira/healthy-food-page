@@ -45,6 +45,19 @@
     border-radius: .5rem;
 
     transition: filter .2s;
+    position: relative;
+
+    &::after {
+      content: '';
+      background: #BADC58;
+      width: 12.5rem;
+      height: 4.3rem;
+      position: absolute;
+      top: 1.1rem;
+      left: 1.3rem;
+      filter: blur(10px);
+      z-index: -1;
+    }
 
     &:hover {
       filter: brightness(.9);
