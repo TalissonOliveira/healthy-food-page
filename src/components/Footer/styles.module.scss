@@ -1,0 +1,32 @@
+.footerContainer {
+  max-width: 1366px;
+  height: 10.3rem;
+  margin: 0 auto;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10.3rem;
+  padding: 0 13.7rem;
+
+  small {
+    color: var(--blue-700);
+    font-size: 1.6rem;
+  }
+
+  a {
+    color: var(--blue-200);
+    font-size: 1.6rem;
+    transition: filter .2s;
+
+    & + a {
+      margin-left: 3.2rem;
+    }
+
+    &:hover {
+      filter: brightness(.8);
+    }
+  }
+}
