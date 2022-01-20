@@ -6,7 +6,9 @@ import styles from './styles.module.scss'
 export function ServicesSection() {
   return (
     <section className={styles.servicesContainer}>
-      <Image src={servicesImg} />
+      <div className={styles.image}>
+        <Image src={servicesImg} />
+      </div>
 
       <div className={styles.servicesContent}>
         <h2>The best services ready To serve you</h2>
