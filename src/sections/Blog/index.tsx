@@ -59,6 +59,18 @@ export function BlogSection() {
           slidesPerView={'auto'}
           navigation
           className={styles.swiper}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              centeredSlides: true,
+            },
+            500: {
+              slidesPerView: 'auto',
+              spaceBetween: 24,
+              centeredSlides: false,
+            },
+          }}
         >
           {postsData.map(post => (
             <SwiperSlide className={styles['swiper-slide']}>

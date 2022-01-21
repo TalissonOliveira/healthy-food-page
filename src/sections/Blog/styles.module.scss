@@ -1,3 +1,5 @@
+@import '../../styles/breakpoints.scss';
+
 .blogContainer {
   display: flex;
   align-items: center;
@@ -29,16 +31,48 @@
   }
 }
 
-.swiper-container {
-  background-color: red;
-}
-
 .swiper {
   padding-bottom: 3.5rem;
   padding-left: 13.7rem;
   height: 100%;
 
+  @include breakpoint(900) {
+    padding-left: 5.7rem;
+  }
+
+  @include breakpoint(medium-only) {
+    padding-left: 2rem;
+  }
+
+  @include breakpoint(500) {
+    padding-left: 0rem;
+  }
+
   .swiper-slide {
     width: 28.3%;
+
+    @include breakpoint(1300) {
+      width: 35.3%;
+    }
+
+    @include breakpoint(1080) {
+      width: 40.3%;
+    }
+
+    @include breakpoint(960) {
+      width: 45.3%;
+    }
+
+    @include breakpoint(670) {
+      width: 55.3%;
+    }
+
+    @include breakpoint(550) {
+      width: 60.3%;
+    }
+
+    @include breakpoint(550) {
+      width: 70.3%;
+    }
   }
 }

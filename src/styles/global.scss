@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 * {
   padding: 0;
   margin: 0;
@@ -51,6 +53,11 @@ a {
     top: 23.1rem;
     margin-top: 0;
 
+    @include breakpoint(medium-only) {
+      top: 50%;
+      margin-top: -5.6rem;
+    }
+
     &::before {
       content: '';
       background-image: url(../../public/images/arrow.svg);
@@ -66,7 +73,11 @@ a {
   }
 
   .swiper-button-prev {
-    left: 40px !important;
+    left: 40px;
+
+    @include breakpoint(medium-only) {
+      left: 20px;
+    }
 
     &::before {
       transform: rotate(180deg);
@@ -74,10 +85,14 @@ a {
   }
 
   .swiper-button-next {
-    right: 40px !important;
+    right: 40px;
+
+    @include breakpoint(medium-only) {
+      right: 20px;
+    }
   }
 
   .swiper-button-disabled {
-    display:none !important;
+    display: none;
   }
 }

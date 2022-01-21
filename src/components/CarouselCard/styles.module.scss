@@ -1,9 +1,20 @@
+@import '../../styles/breakpoints.scss';
+
 .cardContainer {
   background: var(--white);
   width: 34.8rem;
   height: 45rem;
   border-radius: .7rem;
   box-shadow: 0px 15px 20px #1D164D14;
+
+  @include breakpoint(medium-only) {
+    width: 30.8rem;
+    height: 43rem;
+  }
+
+  @include breakpoint(500) {
+    margin: 0 auto;
+  }
 
   img {
     height: 24.7rem;
@@ -23,12 +34,15 @@
     line-height: 3.4rem;
     margin-bottom: 2.4rem;
     max-height: 6.3rem;
+
+    @include breakpoint(medium-only) {
+      font-size: 2.1rem;
+    }
   }
 
   .authorInfos {
     display: flex;
     align-items: center;
-    gap: .8rem;
 
     span {
       color: var(--blue-200);
@@ -36,6 +50,7 @@
       font-weight: 400;
       letter-spacing: 0.32px;
       line-height: 2rem;
+      margin-left: .8rem;
     }
   }
 }
