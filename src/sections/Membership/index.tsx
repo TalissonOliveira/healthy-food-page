@@ -16,7 +16,9 @@ export function Membership() {
         </div>
       </div>
 
-      <Image src={membershipImg} />
+      <div className={styles.image}>
+        <Image src={membershipImg} />
+      </div>
     </section>
   )
 }

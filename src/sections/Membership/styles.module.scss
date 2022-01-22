@@ -1,3 +1,5 @@
+@import '../../styles/breakpoints.scss';
+
 .membershipContainer {
   position: relative;
   display: flex;
@@ -5,10 +7,35 @@
   justify-content: space-between;
   max-width: 1366px;
   margin: 0 auto;
+
+  .image {
+    @include breakpoint(medium-only) {
+      display: none;
+    }
+  }
 }
 
 .membershipContent {
   margin-left: 18.6rem;
+
+  @include breakpoint(1320) {
+    margin-left: 10.6rem;
+  }
+
+  @include breakpoint(1100) {
+    margin-left: 5.6rem;
+  }
+
+  @include breakpoint(medium-only) {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 7rem 1rem 7rem;
+    text-align: center;
+  }
+
+  @include breakpoint(small-only) {
+    padding: 5rem 1rem 5rem;
+  }
 
   h2 {
     color: var(--blue-700);
@@ -17,6 +44,15 @@
     font-weight: bold;
     max-width: 37.6rem;
     margin-bottom: 3.2rem;
+
+    @include breakpoint(1000) {
+      font-size: 2.8rem;
+    }
+
+    @include breakpoint(medium-only) {
+      font-size: 2.8rem;
+      text-align: center;
+    }
   }
 
 
@@ -35,6 +71,15 @@
       border: 1px solid var(--gray-300);
       border-radius: .5rem;
 
+      @include breakpoint(1320) {
+        width: 25rem;
+      }
+
+      @include breakpoint(small-only) {
+        width: 100%;
+        margin-bottom: 1.6rem;
+      }
+
       &::placeholder {
         color: var(--blue-200);
       }
@@ -51,6 +96,19 @@
       letter-spacing: 0.32px;
       position: relative;
       transition: filter .2s;
+
+      @include breakpoint(1115) {
+        width: 25rem;
+        margin-top: 1.6rem;
+      }
+
+      @include breakpoint(medium-only) {
+        width: 9.3rem;
+      }
+
+      @include breakpoint(small-only) {
+        width: 100%;
+      }
 
       &::after {
         content: '';
